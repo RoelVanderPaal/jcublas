@@ -2,11 +2,11 @@ cmake_minimum_required(VERSION 3.1)
 
 project(JCublas2)
 
-include(${CMAKE_CURRENT_SOURCE_DIR}/../../jcuda-common/JCudaCommon_CMake.txt)
+include(${CMAKE_CURRENT_SOURCE_DIR}/../../../../../jcuda-common/JCudaCommon_CMake.txt)
 
 if (NOT TARGET JCudaCommonJNI)
     add_subdirectory(
-        ${CMAKE_CURRENT_SOURCE_DIR}/../../jcuda-common/JCudaCommonJNI
+        ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../jcuda-common/JCudaCommonJNI
         ${CMAKE_CURRENT_BINARY_DIR}/bin)
 endif() 
 
